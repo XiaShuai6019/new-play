@@ -3,65 +3,65 @@
         <Menu mode="horizontal" theme="dark" active-key="1">
             <div class="layout-logo"></div>
             <div class="layout-nav">
-                <Menu-item key="1">
+                <MenuItem key="1">
                     <Icon type="ios-navigate"></Icon>
                     导航一
-                </Menu-item>
-                <Menu-item key="2">
+                </MenuItem>
+                <MenuItem key="2">
                     <Icon type="ios-keypad"></Icon>
                     导航二
-                </Menu-item>
-                <Menu-item key="3">
+                </MenuItem>
+                <MenuItem key="3">
                     <Icon type="ios-analytics"></Icon>
                     导航三
-                </Menu-item>
-                <Menu-item key="4">
+                </MenuItem>
+                <MenuItem key="4">
                     <Icon type="ios-paper"></Icon>
                     导航四
-                </Menu-item>
+                </MenuItem>
             </div>
         </Menu>
         <Menu mode="horizontal" active-key="1">
             <div class="layout-assistant">
-                <Menu-item key="1">二级导航</Menu-item>
-                <Menu-item key="2">二级导航</Menu-item>
-                <Menu-item key="3">二级导航</Menu-item>
+                <MenuItem key="1">二级导航</MenuItem>
+                <MenuItem key="2">二级导航</MenuItem>
+                <MenuItem key="3">二级导航</MenuItem>
             </div>
         </Menu>
         <div class="layout-content">
             <Row>
-                <i-col span="5">
+                <Col span="5">
                     <Menu active-key="1-2" width="auto" :open-keys="['1']">
                         <Submenu key="1">
                             <template slot="title">
                                 <Icon type="ios-navigate"></Icon>
                                 导航一
                             </template>
-                            <Menu-item key="1-1">选项 1</Menu-item>
-                            <Menu-item key="1-2">选项 2</Menu-item>
-                            <Menu-item key="1-3">选项 3</Menu-item>
+                            <MenuItem key="1-1">选项 1</MenuItem>
+                            <MenuItem key="1-2">选项 2</MenuItem>
+                            <MenuItem key="1-3">选项 3</MenuItem>
                         </Submenu>
                         <Submenu key="2">
                             <template slot="title">
                                 <Icon type="ios-keypad"></Icon>
                                 导航二
                             </template>
-                            <Menu-item key="2-1">选项 1</Menu-item>
-                            <Menu-item key="2-2">选项 2</Menu-item>
+                            <MenuItem key="2-1">选项 1</MenuItem>
+                            <MenuItem key="2-2">选项 2</MenuItem>
                         </Submenu>
                         <Submenu key="3">
                             <template slot="title">
                                 <Icon type="ios-analytics"></Icon>
                                 导航三
                             </template>
-                            <Menu-item key="3-1">选项 1</Menu-item>
-                            <Menu-item key="3-2">选项 2</Menu-item>
+                            <MenuItem key="3-1">选项 1</MenuItem>
+                            <MenuItem key="3-2">选项 2</MenuItem>
                         </Submenu>
                     </Menu>
-                </i-col>
-                <i-col span="19">
+                </Col>
+                <Col span="19">
                     <div class="layout-content-main">内容区域</div>
-                </i-col>
+                </Col>
             </Row>
         </div>
         <div class="layout-copy">

@@ -5,6 +5,9 @@ import IviewTest1 from '@/iviews/Iview-practice-1'
 import IviewTest2 from '@/iviews/Iview-practice-2'
 import IviewTest3 from '@/iviews/Iview-practice-3'
 import IviewTest4 from '@/iviews/Iview-practice-4'
+import IviewTest5 from '@/iviews/Iview-practice-5'
+import SwitchIview from '@/iviews/Switch-View'
+import TreeIView from '@/iviews/Tree-iview'
 import iView from 'view-design'
 import 'view-design/dist/styles/iview.css'
 
@@ -36,6 +39,18 @@ export default new Router({
       path: '/iview4',
       name: 'IviewTest4',
       component: IviewTest4
+    }, {
+      path: '/iview5',
+      name: 'IviewTest5',
+      component: IviewTest5
+    }, {
+      path: '/tree',
+      name: 'TreeIView',
+      component: TreeIView
+    }, {
+      path: '/switch',
+      name: 'SwitchIview',
+      component: SwitchIview
     }
   ]
 })
