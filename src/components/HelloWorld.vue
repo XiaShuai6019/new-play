@@ -2,7 +2,7 @@
   <div class="hello">
      <Row>
         <i-col span="8">
-            <Menu :theme="theme2">
+            <i-menu :theme="theme2">
                 <Submenu name="1">
                     <template slot="title">
                         <Icon type="ios-paper" />
@@ -35,7 +35,7 @@
                         <i-menuItem name="3-5">流失用户</i-menuItem>
                     </MenuGroup>
                 </Submenu>
-            </Menu>
+            </i-menu>
         </i-col>
 
     </Row>
