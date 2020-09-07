@@ -1,5 +1,5 @@
 <template>
-    <Switch v-model="switch1" @on-change="change" />
+  <Switch v-model="switch1" @on-change="change" />
 </template>
 <script>
 export default {
