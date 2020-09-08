@@ -8,6 +8,9 @@ import IviewTest4 from '@/iviews/Iview-practice-4'
 import IviewTest5 from '@/iviews/Iview-practice-5'
 import SwitchIview from '@/iviews/Switch-View'
 import TreeIView from '@/iviews/Tree-iview'
+import Dad from '@/components/router-url/Dad'
+import Son from '@/components/router-url/Son'
+import Table from '@/components/router-url/MyTable'
 import iView from 'view-design'
 import 'view-design/dist/styles/iview.css'
 
@@ -41,8 +44,13 @@ export default new Router({
       component: IviewTest4
     }, {
       path: '/iview5',
-      name: 'IviewTest5',
-      component: IviewTest5
+      component: IviewTest5,
+      children: [
+        {
+          path: '/table',
+          component: Table
+        }
+      ]
     }, {
       path: '/tree',
       name: 'TreeIView',
@@ -51,6 +59,14 @@ export default new Router({
       path: '/switch',
       name: 'SwitchIview',
       component: SwitchIview
+    }, {
+      path: '/dad',
+      name: 'Dad',
+      component: Dad
+    }, {
+      path: '/son',
+      name: 'Son',
+      component: Son
     }
   ]
 })

@@ -1,16 +1,15 @@
 <template>
   <div>
-    {{message}}
+    <router-link to="/son">去儿子页面</router-link>
   </div>
 </template>
 <script>
 export default {
   data () {
     return {
-      message: '你好'
+      name: 'home'
     }
   }
 }
 </script>
-<style >
-</style>
+<style scoped></style>
